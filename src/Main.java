@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe8();
+        Aufgabe9();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -127,5 +127,20 @@ public class Main {
                 break;
         }
         System.out.println("Your Commission Rate was set to " + String.format( "%.2f", comission ));
+    }
+
+    public static void Aufgabe9 () {
+        Scanner myObj = new Scanner(System.in);
+        System.out.print("Year: ");
+        int leapYear = myObj.nextInt();
+//        System.out.println(leapYear % 4);
+//        System.out.println(leapYear % 100);
+//        System.out.println(leapYear % 400);
+        if ((leapYear % 4 == 0) && (leapYear % 100 != 0) || (leapYear % 400 == 0)){
+            System.out.println("Leapyear");
+        }
+        else {
+            System.out.println("Not a Leapyear");
+        }
     }
 }
