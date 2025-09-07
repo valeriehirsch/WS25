@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe4();
+        Aufgabe5();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -43,4 +43,27 @@ public class Main {
         int y = myObj.nextInt();
         System.out.println(x+y);
     }
+
+    public static void Aufgabe5 () {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Before Swap:");
+        System.out.print("x: ");
+        int x = myObj.nextInt();
+        System.out.print("y: ");
+        int y = myObj.nextInt();
+
+        // x 10
+        // y 5
+
+        x = x+y; // 15
+        y = x-y; // 10
+        x = x-y; // 5
+
+        System.out.println("After Swap:");
+        System.out.println("x: " + x);
+        System.out.println("y: " + y);
+
+    }
+
+
 }
