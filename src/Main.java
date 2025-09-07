@@ -1,7 +1,8 @@
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe3();
+        Aufgabe4();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -34,5 +35,12 @@ public class Main {
         double d2num = 99.9;
         int sum = c + hexa + octnum + (int)lngnum + (int)f1num + (int)f2num + (int)d1num + (int)d2num;
         System.out.println(sum);
+    }
+
+    public static void Aufgabe4 () {
+        Scanner myObj = new Scanner(System.in);
+        int x = myObj.nextInt();
+        int y = myObj.nextInt();
+        System.out.println(x+y);
     }
 }
