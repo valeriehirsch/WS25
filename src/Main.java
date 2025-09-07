@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe6();
+        Aufgabe7();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -80,6 +80,29 @@ public class Main {
         else {
             System.out.println("n1 == n2");
         }
+
+    }
+
+    public static void Aufgabe7 () {
+        Scanner myObj = new Scanner(System.in);
+        System.out.print("Enter annual Revenue: ");
+        int revenue = myObj.nextInt();
+
+        if (revenue < 0 || revenue >= 100000) {
+            System.out.println("Invalid Revenue");
+        } else if (revenue > 0 && revenue < 20000) {
+            System.out.println("Poor Sales Revenue");
+        } else if (revenue > 20000 && revenue < 50000) {
+            System.out.println("Average Sales Revenue");
+        } else if (revenue > 50000 && revenue < 80000) {
+            System.out.println("Good Sales Revenue");
+        } else if (revenue > 80000 && revenue < 100000) {
+            System.out.println("Excellent Sales Revenue");
+        }
+
+
+    }
+    public static void Aufgabe8 () {
 
     }
 }
