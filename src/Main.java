@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe5();
+        Aufgabe6();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -65,5 +65,21 @@ public class Main {
 
     }
 
+    public static void Aufgabe6 () {
+        Scanner myObj = new Scanner(System.in);
+        System.out.print("n1: ");
+        int x = myObj.nextInt();
+        System.out.print("n2: ");
+        int y = myObj.nextInt();
+        if (x > y) {
+            System.out.println("n1 > n2");
+        }
+        else if (x < y) {
+            System.out.println("n1 < n2");
+        }
+        else {
+            System.out.println("n1 == n2");
+        }
 
+    }
 }
