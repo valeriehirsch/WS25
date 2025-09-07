@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe2();
+        Aufgabe3();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -21,5 +21,18 @@ public class Main {
             System.out.println(parts[i]);
         }
 
+    }
+
+    public static void Aufgabe3 () {
+        char c = 'Z';
+        int hexa = 0xface;
+        int octnum = 012;
+        long lngnum = 80L;
+        float f1num = 44e-1f;
+        float f2num = 5.5f;
+        double d1num = 8.88e1;
+        double d2num = 99.9;
+        int sum = c + hexa + octnum + (int)lngnum + (int)f1num + (int)f2num + (int)d1num + (int)d2num;
+        System.out.println(sum);
     }
 }
