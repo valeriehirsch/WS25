@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe7();
+        Aufgabe8();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -103,6 +103,28 @@ public class Main {
 
     }
     public static void Aufgabe8 () {
+        Scanner myObj = new Scanner(System.in);
+        System.out.print("Enter ComissionClass: ");
+        int provision = myObj.nextInt();
+        double comission = 0.0;
+        switch(provision) {
+            case 1:
+                comission = 0.1;
+                break;
+            case 2:
+                comission = 0.2;
+                break;
+            case 3:
+                comission = 0.3;
+                break;
+            case 4:
+                comission = 0.4;
+                break;
 
+
+            default:
+                break;
+        }
+        System.out.println("Your Commission Rate was set to " + comission);
     }
 }
