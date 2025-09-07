@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -106,25 +107,25 @@ public class Main {
         Scanner myObj = new Scanner(System.in);
         System.out.print("Enter ComissionClass: ");
         int provision = myObj.nextInt();
-        double comission = 0.0;
+        double comission = 0.00;
         switch(provision) {
             case 1:
-                comission = 0.1;
+                comission = 0.01;
                 break;
             case 2:
-                comission = 0.2;
+                comission = 0.02;
                 break;
             case 3:
-                comission = 0.3;
+                comission = 0.03;
                 break;
             case 4:
-                comission = 0.4;
+                comission = 0.04;
                 break;
 
 
             default:
                 break;
         }
-        System.out.println("Your Commission Rate was set to " + comission);
+        System.out.println("Your Commission Rate was set to " + String.format( "%.2f", comission ));
     }
 }
