@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Aufgabe9();
+        Aufgabe10();
     }
     public static void Aufgabe1 () {
         System.out.println("Hello World!");
@@ -141,6 +141,22 @@ public class Main {
         }
         else {
             System.out.println("Not a Leapyear");
+        }
+    }
+
+    public static void Aufgabe10 () {
+        Scanner myObj = new Scanner(System.in);
+        System.out.print("Number: ");
+        int num = myObj.nextInt();
+
+        int einser = num % 10;
+        int zehner = (num / 10) % 10;
+        int hunderter = num / 100;
+        if (hunderter != 0){
+            System.out.println( einser * 100 + zehner * 10 + hunderter);
+        }
+        else {
+            System.out.println( einser * 10 + zehner);
         }
     }
 }
